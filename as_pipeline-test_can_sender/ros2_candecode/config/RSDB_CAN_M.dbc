@@ -1,0 +1,411 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Power_Mod_R Power_Mod_L Inverter_RR Inverter_RL Inverter_FR Inverter_FL _02_MCU
+VAL_TABLE_ Inverter_Status 112 "Switch on disabled / Vol en" 96 "Switch on disabled" 80 "Switch on disabled / Vol en" 64 "Switch on disabled" 63 "Fault reaction active / Vol en" 62 "Unknown" 61 "Unknown" 60 "Unknown" 59 "Unknown" 58 "Unknown" 57 "Unknown" 56 "Fault / Voltage enabled" 55 "Operation enabled / Vol en" 54 "Unknown" 53 "Unknown" 52 "Unknown" 51 "Switched on / Voltage enabled" 50 "Unknown" 49 "Ready to switch on / Vol en" 48 "Not ready to switch on / Vol en" 47 "Fault reaction active" 46 "Unknown" 45 "Unknown" 44 "Unknown" 43 "Unknown" 42 "Unknown" 41 "Unknown" 40 "Fault" 39 "Operation enabled" 38 "Unknown" 37 "Unknown" 36 "Unknown" 35 "Switched on" 34 "Unknown" 33 "Ready to switch on" 32 "Not ready to switch on" 31 "Fault reaction active / Vol en" 30 "Unknown" 29 "Unknown" 28 "Unknown" 27 "Unknown" 26 "Unknown" 25 "Unknown" 24 "Fault / Voltage enabled" 23 "Quick Stop Active / Vol en" 22 "Unknown" 21 "Unknown" 20 "Unknown" 19 "Unknown" 18 "Unknown" 17 "Unknown" 16 "Not ready to switch on / Vol en" 15 "Fault Reaction Active" 14 "Unknown" 13 "Unknown" 12 "Unknown" 11 "Unknown" 10 "Unknown" 9 "Unknown" 8 "Fault" 7 "Quick Stop Active" 6 "Unknown" 5 "Unknown" 4 "Unknown" 3 "Unknown" 2 "Unknown" 1 "Unknown" 0 "Not ready to switch on" ;
+
+
+BO_ 449 Inv_FL_Status: 8 Inverter_FL
+ SG_ F_Inv_FL_Reserved_2 : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Reserved_1 : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Reserved : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Overload_Active : 12|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_MNT_Not_Operational : 36|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Statusword : 0|7@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ F_Inv_FL_Warning_Active : 7|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_FWK_Active : 8|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Internal_Limit_Active : 11|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Precharged : 14|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Discharged : 15|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Event_Buffer_New : 16|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Event_Buffer_Full : 17|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_PM_Over_Current_HW : 18|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_PM_Curr_Offset_Failed : 19|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_PM_Temp_Sensor_Fault : 20|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_PM_Temp_Warning : 21|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_PM_Temp_Error : 22|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_PM_it_Error : 23|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_PM_Over_Current_SW : 24|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_PM_Data_Inconsistency : 25|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_DC_Link_Overvoltage_HW : 26|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_DC_Link_Overvoltage_SW : 27|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_DC_Link_Undervoltage : 28|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Fault_Other_Inverter : 29|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Motor_Temp_Sensor_Fault : 30|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Motor_Temp_Warning : 31|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Motor_Temp_Error : 32|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Stator_Freq_Too_High : 33|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Board_Supply_Vol_Error : 34|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Receive_PDO_Timeout : 35|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Task_Calc_Time_Overrun : 37|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Net_Sync_Error : 38|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Pos_Device_Signal_Low : 39|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Pos_Device_Signal_High : 40|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Resolvercal_Fail : 41|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_System_Error : 42|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Cover_Interlock_Open : 43|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Gate_Driver_Disabled : 44|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_ESM_Error : 45|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Ambient_Temp_Warning : 46|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Ambient_Temp_Error : 47|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Amb_Temp_Sensor_Fault : 48|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_PM_Clamping_Timeout : 49|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_DCLink_RippleVol_Too_Hi : 50|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Motor_I2t_Warning : 51|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Motor_I2t_Error : 52|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FL_Switched_Off_During_FWK : 53|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 450 Inv_FR_Status: 8 Inverter_FL
+ SG_ F_Inv_FR_Reserved_2 : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Reserved_1 : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Reserved : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Overload_Active : 12|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_MNT_Not_Operational : 36|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Statusword : 0|7@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ F_Inv_FR_Warning_Active : 7|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_FWK_Active : 8|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Internal_Limit_Active : 11|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Precharged : 14|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Discharged : 15|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Event_Buffer_New : 16|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Event_Buffer_Full : 17|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_PM_Over_Current_HW : 18|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_PM_Curr_Offset_Failed : 19|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_PM_Temp_Sensor_Fault : 20|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_PM_Temp_Warning : 21|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_PM_Temp_Error : 22|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_PM_it_Error : 23|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_PM_Over_Current_SW : 24|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_PM_Data_Inconsistency : 25|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_DC_Link_Overvoltage_HW : 26|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_DC_Link_Overvoltage_SW : 27|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_DC_Link_Undervoltage : 28|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Fault_Other_Inverter : 29|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Motor_Temp_Sensor_Fault : 30|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Motor_Temp_Warning : 31|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Motor_Temp_Error : 32|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Stator_Freq_Too_High : 33|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Board_Supply_Vol_Error : 34|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Receive_PDO_Timeout : 35|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Task_Calc_Time_Overrun : 37|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Net_Sync_Error : 38|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Pos_Device_Signal_Low : 39|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Pos_Device_Signal_High : 40|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Resolvercal_Fail : 41|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_System_Error : 42|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Cover_Interlock_Open : 43|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Gate_Driver_Disabled : 44|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_ESM_Error : 45|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Ambient_Temp_Warning : 46|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Ambient_Temp_Error : 47|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Amb_Temp_Sensor_Fault : 48|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_PM_Clamping_Timeout : 49|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_DCLink_RippleVol_Too_Hi : 50|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Motor_I2t_Warning : 51|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Motor_I2t_Error : 52|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_FR_Switched_Off_During_FWK : 53|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 705 Inv_RL_Status: 8 Inverter_FL
+ SG_ F_Inv_RL_Reserved_2 : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Reserved_1 : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Reserved : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Overload_Active : 12|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_MNT_Not_Operational : 36|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Statusword : 0|7@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ F_Inv_RL_Warning_Active : 7|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_FWK_Active : 8|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Internal_Limit_Active : 11|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Precharged : 14|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Discharged : 15|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Event_Buffer_New : 16|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Event_Buffer_Full : 17|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_PM_Over_Current_HW : 18|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_PM_Curr_Offset_Failed : 19|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_PM_Temp_Sensor_Fault : 20|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_PM_Temp_Warning : 21|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_PM_Temp_Error : 22|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_PM_it_Error : 23|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_PM_Over_Current_SW : 24|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_PM_Data_Inconsistency : 25|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_DC_Link_Overvoltage_HW : 26|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_DC_Link_Overvoltage_SW : 27|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_DC_Link_Undervoltage : 28|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Fault_Other_Inverter : 29|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Motor_Temp_Sensor_Fault : 30|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Motor_Temp_Warning : 31|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Motor_Temp_Error : 32|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Stator_Freq_To_High : 33|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Board_Supply_Vol_Error : 34|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Receive_PDO_Timeout : 35|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Task_Calc_Time_Overrun : 37|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Net_Sync_Error : 38|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Pos_Device_Signal_Low : 39|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Pos_Device_Signal_High : 40|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Resolvercal_Fail : 41|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_System_Error : 42|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Cover_Interlock_Open : 43|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Gate_Driver_Disabled : 44|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_ESM_Error : 45|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Ambient_Temp_Warning : 46|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Ambient_Temp_Error : 47|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Amb_Temp_Sensor_Fault : 48|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_PM_Clamping_Timeout : 49|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_DCLink_RippleVol_Too_Hi : 50|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Motor_I2t_Warning : 51|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Motor_I2t_Error : 52|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RL_Switched_Off_During_FWK : 53|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 706 Inv_RR_Status: 8 Inverter_FL
+ SG_ F_Inv_RR_Reserved_2 : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Reserved_1 : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Reserved : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Overload_Active : 12|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_MNT_Not_Operational : 36|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Statusword : 0|7@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ F_Inv_RR_Warning_Active : 7|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_FWK_Active : 8|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Internal_Limit_Active : 11|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Precharged : 14|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Discharged : 15|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Event_Buffer_New : 16|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Event_Buffer_Full : 17|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_PM_Over_Current_HW : 18|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_PM_Curr_Offset_Failed : 19|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_PM_Temp_Sensor_Fault : 20|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_PM_Temp_Warning : 21|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_PM_Temp_Error : 22|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_PM_it_Error : 23|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_PM_Over_Current_SW : 24|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_PM_Data_Inconsistency : 25|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_DC_Link_Overvoltage_HW : 26|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_DC_Link_Overvoltage_SW : 27|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_DC_Link_Undervoltage : 28|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Fault_Other_Inverter : 29|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Motor_Temp_Sensor_Fault : 30|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Motor_Temp_Warning : 31|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Motor_Temp_Error : 32|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Stator_Freq_To_High : 33|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Board_Supply_Vol_Error : 34|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Receive_PDO_Timeout : 35|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Task_Calc_Time_Overrun : 37|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Net_Sync_Error : 38|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Pos_Device_Signal_Low : 39|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Pos_Device_Signal_High : 40|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Resolvercal_Fail : 41|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_System_Error : 42|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Cover_Interlock_Open : 43|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Gate_Driver_Disabled : 44|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_ESM_Error : 45|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Ambient_Temp_Warning : 46|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Ambient_Temp_Error : 47|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Amb_Temp_Sensor_Fault : 48|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_PM_Clamping_Timeout : 49|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_DCLink_RippleVol_Too_Hi : 50|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Motor_I2t_Warning : 51|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Motor_I2t_Error : 52|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ F_Inv_RR_Switched_Off_During_FWK : 53|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 577 Inv_FL_ActVals_1: 8 Inverter_FL
+ SG_ Inv_FL_Velocity_ActVal : 0|32@1- (6.1035E-005,0) [0|0] "rpm" Vector__XXX
+ SG_ Inv_FL_Torque_ActVal : 32|16@1- (0.0111,0) [-35|35] "Nm" Vector__XXX
+ SG_ Inv_FL_Current_ActVal : 48|16@1+ (0.015625,0) [0|0] "A" Vector__XXX
+
+BO_ 578 Inv_FR_ActVals_1: 8 Inverter_FL
+ SG_ Inv_FR_Velocity_ActVal : 0|32@1- (6.1035E-005,0) [0|0] "rpm" Vector__XXX
+ SG_ Inv_FR_Torque_ActVal : 32|16@1- (0.0111,0) [-35|35] "Nm" Vector__XXX
+ SG_ Inv_FR_Current_ActVal : 48|16@1+ (0.015625,0) [0|0] "A" Vector__XXX
+
+BO_ 833 Inv_RL_ActVals_1: 8 Inverter_FL
+ SG_ Inv_RL_Velocity_ActVal : 0|32@1- (6.1035E-005,0) [0|0] "rpm" Vector__XXX
+ SG_ Inv_RL_Torque_ActVal : 32|16@1- (0.0111,0) [-35|35] "Nm" Vector__XXX
+ SG_ Inv_RL_Current_ActVal : 48|16@1+ (0.015625,0) [0|0] "A" Vector__XXX
+
+BO_ 834 Inv_RR_ActVals_1: 8 Inverter_FL
+ SG_ Inv_RR_Velocity_ActVal : 0|32@1- (6.1035E-005,0) [0|0] "rpm" Vector__XXX
+ SG_ Inv_RR_Torque_ActVal : 32|16@1- (0.0111,0) [-35|35] "Nm" Vector__XXX
+ SG_ Inv_RR_Current_ActVal : 48|16@1+ (0.015625,0) [0|0] "A" Vector__XXX
+
+BO_ 641 Inv_FL_ActVals_2: 8 Inverter_FL
+ SG_ Inv_FL_Power_Module_Temperature : 48|16@1- (0.0625,0) [0|80] "C" Vector__XXX
+ SG_ Inv_FL_Motor_volSActFiltered : 32|16@1- (0.0625,0) [0|0] "V" Vector__XXX
+ SG_ Inv_FL_Motor_Temperature : 0|16@1- (0.0625,0) [0|160] "C" Vector__XXX
+ SG_ Inv_FL_Motor_powerActFiltered : 16|16@1- (0.016,0) [0|0] "KW" Vector__XXX
+
+BO_ 642 Inv_FR_ActVals_2: 8 Inverter_FL
+ SG_ Inv_FR_Power_Module_Temperature : 48|16@1- (0.0625,0) [0|80] "C" Vector__XXX
+ SG_ Inv_FR_Motor_volSActFiltered : 32|16@1- (0.0625,0) [0|0] "V" Vector__XXX
+ SG_ Inv_FR_Motor_Temperature : 0|16@1- (0.0625,0) [0|160] "C" Vector__XXX
+ SG_ Inv_FR_Motor_powerActFiltered : 16|16@1- (0.016,0) [0|0] "KW" Vector__XXX
+
+BO_ 897 Inv_RL_ActVals_2: 8 Inverter_FL
+ SG_ Inv_RL_Power_Module_Temperature : 48|16@1- (0.0625,0) [0|80] "C" Vector__XXX
+ SG_ Inv_RL_Motor_volSActFiltered : 32|16@1- (0.0625,0) [0|0] "V" Vector__XXX
+ SG_ Inv_RL_Motor_Temperature : 0|16@1- (0.0625,0) [0|160] "C" Vector__XXX
+ SG_ Inv_RL_Motor_powerActFiltered : 16|16@1- (0.016,0) [0|0] "KW" Vector__XXX
+
+BO_ 898 Inv_RR_ActVals_2: 8 Inverter_FL
+ SG_ Inv_RR_Power_Module_Temperature : 48|16@1- (0.0625,0) [0|80] "C" Vector__XXX
+ SG_ Inv_RR_Motor_volSActFiltered : 32|16@1- (0.0625,0) [0|0] "V" Vector__XXX
+ SG_ Inv_RR_Motor_Temperature : 0|16@1- (0.0625,0) [0|160] "C" Vector__XXX
+ SG_ Inv_RR_Motor_powerActFiltered : 16|16@1- (0.016,0) [0|0] "KW" Vector__XXX
+
+BO_ 385 Device_L_ActVals: 8 Inverter_FL
+ SG_ Dev_L_DC_Link_Voltage_ActVal : 0|16@1- (0.0625,0) [0|0] "V" Vector__XXX
+ SG_ Dev_L_Ambient_Temperature : 16|16@1- (0.0625,0) [0|0] "C" Vector__XXX
+
+BO_ 386 Device_R_ActVals: 8 Inverter_FL
+ SG_ Dev_R_DC_Link_Voltage_ActVal : 0|16@1- (0.0625,0) [0|0] "V" Vector__XXX
+ SG_ Dev_R_Ambient_Temperature : 16|16@1- (0.0625,0) [0|0] "C" Vector__XXX
+
+BO_ 513 Inv_FL_SetpVals_1: 8 _02_MCU
+ SG_ Inv_FL_Velocity_SetpVal : 16|32@1- (6.1035E-005,0) [0|0] "rpm" Vector__XXX
+ SG_ Inv_FL_Torque_SetpVal : 48|16@1- (0.0111,0) [-35|35] "Nm" Vector__XXX
+ SG_ Inv_FL_Control_Word : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 514 Inv_FR_SetpVals_1: 8 _02_MCU
+ SG_ Inv_FR_Velocity_SetpVal : 16|32@1- (6.1035E-005,0) [0|0] "rpm" Vector__XXX
+ SG_ Inv_FR_Torque_SetpVal : 48|16@1- (0.0111,0) [-35|35] "Nm" Vector__XXX
+ SG_ Inv_FR_Control_Word : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1025 Inv_RL_SetpVals_1: 8 _02_MCU
+ SG_ Inv_RL_Velocity_SetpVal : 16|32@1- (6.1035E-005,0) [0|0] "rpm" Vector__XXX
+ SG_ Inv_RL_Torque_SetpVal : 48|16@1- (0.0111,0) [-35|35] "Nm" Vector__XXX
+ SG_ Inv_RL_Control_Word : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1026 Inv_RR_SetpVals_1: 8 _02_MCU
+ SG_ Inv_RR_Velocity_SetpVal : 16|32@1- (6.1035E-005,0) [0|0] "rpm" Vector__XXX
+ SG_ Inv_RR_Torque_SetpVal : 48|16@1- (0.0111,0) [-35|35] "Nm" Vector__XXX
+ SG_ Inv_RR_Control_Word : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 769 Inv_FL_SetpVals_2: 8 _02_MCU
+ SG_ Inv_FL_CurDOffset : 32|16@1- (0.015625,0) [-200|200] "A" Vector__XXX
+ SG_ Inv_FL_Motor_DC_Link_Ctrler_Min : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Inv_FL_Motor_DC_Link_Ctrler_Max : 0|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 770 Inv_FR_SetpVals_2: 8 _02_MCU
+ SG_ Inv_FR_CurDOffset : 32|16@1- (0.015625,0) [-200|200] "A" Vector__XXX
+ SG_ Inv_FR_Motor_DC_Link_Ctrler_Min : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Inv_FR_Motor_DC_Link_Ctrler_Max : 0|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 1281 Inv_RL_SetpVals_2: 8 _02_MCU
+ SG_ Inv_RL_CurDOffset : 32|16@1- (0.015625,0) [-200|200] "A" Vector__XXX
+ SG_ Inv_RL_Motor_DC_Link_Ctrler_Min : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Inv_RL_Motor_DC_Link_Ctrler_Max : 0|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 1282 Inv_RR_SetpVals_2: 8 _02_MCU
+ SG_ Inv_RR_CurDOffset : 32|16@1- (0.015625,0) [-200|200] "A" Vector__XXX
+ SG_ Inv_RR_Motor_DC_Link_Ctrler_Min : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Inv_RR_Motor_DC_Link_Ctrler_Max : 0|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 1345 Device_L_SetpVals: 8 _02_MCU
+ SG_ Dev_L_System_TimeStamp : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1346 Device_R_SetpVals: 8 _02_MCU
+ SG_ Dev_R_System_TimeStamp : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 161 Device_R_Emergency_Message: 8 Vector__XXX
+ SG_ Dev_R_Emergency_Signal_4 : 48|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Dev_R_Emergency_Signal_3 : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Dev_R_Emergency_Signal_2 : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Dev_R_Emergency_Signal_1 : 0|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 160 Device_L_Emergency_Message: 8 Vector__XXX
+ SG_ Dev_L_Emergency_Signal_4 : 48|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Dev_L_Emergency_Signal_3 : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Dev_L_Emergency_Signal_2 : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Dev_L_Emergency_Signal_1 : 0|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 1568 Inv_Download_Data_2: 8 Vector__XXX
+ SG_ Inv_Download_Data_2 : 0|64@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 1440 Inv_Download_Data_1: 8 Vector__XXX
+ SG_ Inv_Download_Data_1 : 0|64@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 1472 Inv_Upload_Data_1: 8 Vector__XXX
+ SG_ Inv_Upload_Data_1 : 0|64@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1600 Inv_Upload_Data_2: 8 Vector__XXX
+ SG_ Inv_Upload_Data_2 : 0|64@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_TX_BU_ 385 : Inverter_FL,Power_Mod_L;
+
+
+EV_ EnvVar_Inv_RR_OP_Enabled: 0 [0|0] "" 0 1 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ EnvVar_Inv_RL_OP_Enabled: 0 [0|0] "" 0 2 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ EnvVar_Inv_FR_OP_Enabled: 0 [0|0] "" 0 3 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ EnvVar_Inv_FL_OP_Enabled: 0 [0|0] "" 0 4 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ EnvVar_Inv_RPM_RR: 0 [0|24970] "" 0 5 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ EnvVar_Inv_RPM_RL: 0 [0|24970] "" 0 6 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ EnvVar_Inv_RPM_FR: 0 [0|24970] "" 0 7 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ EnvVar_Inv_RPM_RR_Enabled: 0 [0|1] "" 0 8 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ EnvVar_Inv_RPM_RL_Enabled: 0 [0|1] "" 0 9 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ EnvVar_Inv_RPM_FR_Enabled: 0 [0|1] "" 0 10 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ EnvVar_Inv_FWK_Active: 0 [0|1] "" 0 11 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ EnvVar_Inv_Status_Enabled: 0 [0|1] "" 0 12 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ EnvVar_Inv_RPM_FL: 0 [0|24970] "" 0 13 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ EnvVar_Power_Mod_Temp: 0 [0|0] "" 0 14 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ EnvVar_Motor_Temp: 0 [0|256] "" 0 15 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ EnvVar_Inv_RPM_FL_Enabled: 0 [0|1] "" 0 16 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ EnvVar_Inv_ActVals2_FL_Enabled: 0 [0|1] "" 0 17 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ EnvVar_Inv_ActVals2_RR_Enabled: 0 [0|1] "" 0 18 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ EnvVar_Inv_ActVals2_RL_Enabled: 0 [0|1] "" 0 19 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ EnvVar_Inv_ActVals2_FR_Enabled: 0 [0|1] "" 0 20 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "";
+VAL_ 449 F_Inv_FL_Statusword 112 "Switch on disabled / Vol en" 96 "Switch on disabled" 80 "Switch on disabled / Vol en" 64 "Switch on disabled" 63 "Fault reaction active / Vol en" 62 "Unknown" 61 "Unknown" 60 "Unknown" 59 "Unknown" 58 "Unknown" 57 "Unknown" 56 "Fault / Voltage enabled" 55 "Operation enabled / Vol en" 54 "Unknown" 53 "Unknown" 52 "Unknown" 51 "Switched on / Voltage enabled" 50 "Unknown" 49 "Ready to switch on / Vol en" 48 "Not ready to switch on / Vol en" 47 "Fault reaction active" 46 "Unknown" 45 "Unknown" 44 "Unknown" 43 "Unknown" 42 "Unknown" 41 "Unknown" 40 "Fault" 39 "Operation enabled" 38 "Unknown" 37 "Unknown" 36 "Unknown" 35 "Switched on" 34 "Unknown" 33 "Ready to switch on" 32 "Not ready to switch on" 31 "Fault reaction active / Vol en" 30 "Unknown" 29 "Unknown" 28 "Unknown" 27 "Unknown" 26 "Unknown" 25 "Unknown" 24 "Fault / Voltage enabled" 23 "Quick Stop Active / Vol en" 22 "Unknown" 21 "Unknown" 20 "Unknown" 19 "Unknown" 18 "Unknown" 17 "Unknown" 16 "Not ready to switch on / Vol en" 15 "Fault Reaction Active" 14 "Unknown" 13 "Unknown" 12 "Unknown" 11 "Unknown" 10 "Unknown" 9 "Unknown" 8 "Fault" 7 "Quick Stop Active" 6 "Unknown" 5 "Unknown" 4 "Unknown" 3 "Unknown" 2 "Unknown" 1 "Unknown" 0 "Not ready to switch on" ;
+VAL_ 450 F_Inv_FR_Statusword 112 "Switch on disabled / Vol en" 96 "Switch on disabled" 80 "Switch on disabled / Vol en" 64 "Switch on disabled" 63 "Fault reaction active / Vol en" 62 "Unknown" 61 "Unknown" 60 "Unknown" 59 "Unknown" 58 "Unknown" 57 "Unknown" 56 "Fault / Voltage enabled" 55 "Operation enabled / Vol en" 54 "Unknown" 53 "Unknown" 52 "Unknown" 51 "Switched on / Voltage enabled" 50 "Unknown" 49 "Ready to switch on / Vol en" 48 "Not ready to switch on / Vol en" 47 "Fault reaction active" 46 "Unknown" 45 "Unknown" 44 "Unknown" 43 "Unknown" 42 "Unknown" 41 "Unknown" 40 "Fault" 39 "Operation enabled" 38 "Unknown" 37 "Unknown" 36 "Unknown" 35 "Switched on" 34 "Unknown" 33 "Ready to switch on" 32 "Not ready to switch on" 31 "Fault reaction active / Vol en" 30 "Unknown" 29 "Unknown" 28 "Unknown" 27 "Unknown" 26 "Unknown" 25 "Unknown" 24 "Fault / Voltage enabled" 23 "Quick Stop Active / Vol en" 22 "Unknown" 21 "Unknown" 20 "Unknown" 19 "Unknown" 18 "Unknown" 17 "Unknown" 16 "Not ready to switch on / Vol en" 15 "Fault Reaction Active" 14 "Unknown" 13 "Unknown" 12 "Unknown" 11 "Unknown" 10 "Unknown" 9 "Unknown" 8 "Fault" 7 "Quick Stop Active" 6 "Unknown" 5 "Unknown" 4 "Unknown" 3 "Unknown" 2 "Unknown" 1 "Unknown" 0 "Not ready to switch on" ;
+VAL_ 705 F_Inv_RL_Statusword 112 "Switch on disabled / Vol en" 96 "Switch on disabled" 80 "Switch on disabled / Vol en" 64 "Switch on disabled" 63 "Fault reaction active / Vol en" 62 "Unknown" 61 "Unknown" 60 "Unknown" 59 "Unknown" 58 "Unknown" 57 "Unknown" 56 "Fault / Voltage enabled" 55 "Operation enabled / Vol en" 54 "Unknown" 53 "Unknown" 52 "Unknown" 51 "Switched on / Voltage enabled" 50 "Unknown" 49 "Ready to switch on / Vol en" 48 "Not ready to switch on / Vol en" 47 "Fault reaction active" 46 "Unknown" 45 "Unknown" 44 "Unknown" 43 "Unknown" 42 "Unknown" 41 "Unknown" 40 "Fault" 39 "Operation enabled" 38 "Unknown" 37 "Unknown" 36 "Unknown" 35 "Switched on" 34 "Unknown" 33 "Ready to switch on" 32 "Not ready to switch on" 31 "Fault reaction active / Vol en" 30 "Unknown" 29 "Unknown" 28 "Unknown" 27 "Unknown" 26 "Unknown" 25 "Unknown" 24 "Fault / Voltage enabled" 23 "Quick Stop Active / Vol en" 22 "Unknown" 21 "Unknown" 20 "Unknown" 19 "Unknown" 18 "Unknown" 17 "Unknown" 16 "Not ready to switch on / Vol en" 15 "Fault Reaction Active" 14 "Unknown" 13 "Unknown" 12 "Unknown" 11 "Unknown" 10 "Unknown" 9 "Unknown" 8 "Fault" 7 "Quick Stop Active" 6 "Unknown" 5 "Unknown" 4 "Unknown" 3 "Unknown" 2 "Unknown" 1 "Unknown" 0 "Not ready to switch on" ;
+VAL_ 706 F_Inv_RR_Statusword 112 "Switch on disabled / Vol en" 96 "Switch on disabled" 80 "Switch on disabled / Vol en" 64 "Switch on disabled" 63 "Fault reaction active / Vol en" 62 "Unknown" 61 "Unknown" 60 "Unknown" 59 "Unknown" 58 "Unknown" 57 "Unknown" 56 "Fault / Voltage enabled" 55 "Operation enabled / Vol en" 54 "Unknown" 53 "Unknown" 52 "Unknown" 51 "Switched on / Voltage enabled" 50 "Unknown" 49 "Ready to switch on / Vol en" 48 "Not ready to switch on / Vol en" 47 "Fault reaction active" 46 "Unknown" 45 "Unknown" 44 "Unknown" 43 "Unknown" 42 "Unknown" 41 "Unknown" 40 "Fault" 39 "Operation enabled" 38 "Unknown" 37 "Unknown" 36 "Unknown" 35 "Switched on" 34 "Unknown" 33 "Ready to switch on" 32 "Not ready to switch on" 31 "Fault reaction active / Vol en" 30 "Unknown" 29 "Unknown" 28 "Unknown" 27 "Unknown" 26 "Unknown" 25 "Unknown" 24 "Fault / Voltage enabled" 23 "Quick Stop Active / Vol en" 22 "Unknown" 21 "Unknown" 20 "Unknown" 19 "Unknown" 18 "Unknown" 17 "Unknown" 16 "Not ready to switch on / Vol en" 15 "Fault Reaction Active" 14 "Unknown" 13 "Unknown" 12 "Unknown" 11 "Unknown" 10 "Unknown" 9 "Unknown" 8 "Fault" 7 "Quick Stop Active" 6 "Unknown" 5 "Unknown" 4 "Unknown" 3 "Unknown" 2 "Unknown" 1 "Unknown" 0 "Not ready to switch on" ;
+

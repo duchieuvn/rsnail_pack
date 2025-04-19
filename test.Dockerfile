@@ -32,10 +32,9 @@ RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc
 # Set default shell
 SHELL ["/bin/bash", "-c"]
 
+# Copy source code
 COPY ./as_pipeline-test_can_sender /root/as_pipeline-test_can_sender
-# qtserial 5.15
 COPY ./qtserialbus /root/qtserialbus
-# gtsam 4.2.0-ros
 COPY ./gtsam /root/gtsam
 COPY ./libros2qt /root/libros2qt
 

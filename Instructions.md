@@ -1,5 +1,9 @@
 ## Steps to follow
 
+git clone --branch 5.15 https://github.com/qt/qtserialbus.git
+
+git clone --branch 4.2.0-ros https://github.com/borglab/gtsam.git
+
 1. colcon build the packages you want to run
 in order to launch the node, you have to build the specific node package,
 

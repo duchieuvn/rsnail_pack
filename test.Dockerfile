@@ -16,6 +16,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     libpcl-dev \
     libeigen3-dev \
     libcgal-dev \
+    libtbb-dev \
     python3-ament-package \
     python3-colcon-common-extensions \
     libqt5serialbus5-dev \
@@ -32,17 +33,22 @@ RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc
 # Set default shell
 SHELL ["/bin/bash", "-c"]
 
-# Copy source code
 COPY ./as_pipeline-test_can_sender /root/as_pipeline-test_can_sender
+# qtserial 5.15
 COPY ./qtserialbus /root/qtserialbus
+# gtsam 4.2.0-ros
 COPY ./gtsam /root/gtsam
 COPY ./libros2qt /root/libros2qt
 
-# Build libros2qt
-WORKDIR /root/libros2qt
-RUN mkdir -p build && cd build && cmake .. && make
+WORKDIR /root/qtserialbus
+RUN mkdir -p build && cd build && qmake .. && make
 
-# Set working directory
+WORKDIR /root/gtsam
+RUN mkdir -p build && cd build && \
+    cmake .. -DGTSAM_USE_SYSTEM_EIGEN=ON -DGTSAM_USE_TBB=ON && \
+    make -j$(nproc) && \
+    make install
+
 WORKDIR /root/as_pipeline-test_can_sender
 
 # Launch shell when container starts

@@ -2,7 +2,7 @@
 
 git clone --branch 5.15 https://github.com/qt/qtserialbus.git
 
-git clone --branch 4.2.0-ros https://github.com/borglab/gtsam.git
+
 
 1. colcon build the packages you want to run
 in order to launch the node, you have to build the specific node package,
@@ -34,3 +34,8 @@ run: rivz2
 
 ros2 bag play livox_20250307_1643_bag
 
+docker run -it \
+  --rm \
+  --env DISPLAY=$DISPLAY \
+  testbuild \
+  bash

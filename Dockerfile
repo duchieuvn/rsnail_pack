@@ -44,7 +44,7 @@ WORKDIR /root/qtserialbus
 RUN mkdir -p build && cd build && qmake .. && make
 
 WORKDIR /root/gtsam
-RUN mkdir -p build && cd build 
+RUN mkdir -p build && cd build \
     && cmake .. -DGTSAM_USE_SYSTEM_EIGEN=ON -DGTSAM_USE_TBB=OFF && \
     make -j2 && \
     make install

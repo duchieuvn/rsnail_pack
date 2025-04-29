@@ -41,20 +41,21 @@ COPY ./qtserialbus /root/qtserialbus
 COPY ./gtsam /root/gtsam
 COPY ./libros2qt /root/libros2qt
 
-# WORKDIR /root/qtserialbus
-# RUN mkdir -p build && cd build && qmake .. && make && make install
+WORKDIR /root
+RUN git clone --branch 5.15 https://github.com/qt/qtserialbus.git
+RUN mkdir -p build && cd build && qmake .. && make && make install
 
-# WORKDIR /root/gtsam
-# RUN mkdir -p build && cd build && \ 
-#     cmake .. -DGTSAM_USE_SYSTEM_EIGEN=ON -DGTSAM_USE_TBB=OFF && \
-#     make -j2 && \
-#     make install
+WORKDIR /root/gtsam
+RUN mkdir -p build && cd build && \ 
+    cmake .. -DGTSAM_USE_SYSTEM_EIGEN=ON -DGTSAM_USE_TBB=OFF && \
+    make -j2 && \
+    make install
 
-# WORKDIR /root/libros2qt
-# RUN mkdir -p build && cd build && \
-#     cmake .. \
-#     make && \
-#     make install
+WORKDIR /root/libros2qt
+RUN mkdir -p build && cd build && \
+    cmake .. && \
+    make && \
+    make install
     
 WORKDIR /root/as_pipeline-test_can_sender
 

@@ -19,7 +19,8 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     libtbb-dev \
     python3-ament-package \
     python3-colcon-common-extensions \
-    libqt5serialbus5-dev \
+    libqt5serialport5-dev \
+    libqt5serialbus5 \
     qt5-qmake \
     qtbase5-dev \
     qtchooser \
@@ -40,20 +41,20 @@ COPY ./qtserialbus /root/qtserialbus
 COPY ./gtsam /root/gtsam
 COPY ./libros2qt /root/libros2qt
 
-WORKDIR /root/qtserialbus
-RUN mkdir -p build && cd build && qmake .. && make
+# WORKDIR /root/qtserialbus
+# RUN mkdir -p build && cd build && qmake .. && make && make install
 
-WORKDIR /root/gtsam
-RUN mkdir -p build && cd build 
-    && cmake .. -DGTSAM_USE_SYSTEM_EIGEN=ON -DGTSAM_USE_TBB=OFF && \
-    make -j2 && \
-    make install
+# WORKDIR /root/gtsam
+# RUN mkdir -p build && cd build && \ 
+#     cmake .. -DGTSAM_USE_SYSTEM_EIGEN=ON -DGTSAM_USE_TBB=OFF && \
+#     make -j2 && \
+#     make install
 
-WORKDIR /root/libros2qt
-RUN mkdir -p build && cd build && \
-    cmake .. \
-    make && \
-    make install
+# WORKDIR /root/libros2qt
+# RUN mkdir -p build && cd build && \
+#     cmake .. \
+#     make && \
+#     make install
     
 WORKDIR /root/as_pipeline-test_can_sender
 

@@ -34,6 +34,8 @@ run: rivz2
 
 ros2 bag play livox_20250307_1643_bag
 
+docker build -f test.Dockerfile -t testbuild .
+
 docker run -it \
   --rm \
   --env DISPLAY=$DISPLAY \

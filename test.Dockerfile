@@ -35,15 +35,21 @@ RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc
 SHELL ["/bin/bash", "-c"]
 
 COPY ./as_pipeline-test_can_sender /root/as_pipeline-test_can_sender
-# qtserial 5.15
-COPY ./qtserialbus /root/qtserialbus
 # gtsam 4.2.0-ros
 COPY ./gtsam /root/gtsam
-COPY ./libros2qt /root/libros2qt
 
 WORKDIR /root
 RUN git clone --branch 5.15 https://github.com/qt/qtserialbus.git
+RUN git clone https://github.com/1r0b1n0/libros2qt.git
+
+WORKDIR /root/qtserialbus
 RUN mkdir -p build && cd build && qmake .. && make && make install
+
+WORKDIR /root/libros2qt
+RUN mkdir -p build && cd build && \
+    cmake .. && \
+    make && \
+    make install
 
 WORKDIR /root/gtsam
 RUN mkdir -p build && cd build && \ 
@@ -51,12 +57,6 @@ RUN mkdir -p build && cd build && \
     make -j2 && \
     make install
 
-WORKDIR /root/libros2qt
-RUN mkdir -p build && cd build && \
-    cmake .. && \
-    make && \
-    make install
-    
 WORKDIR /root/as_pipeline-test_can_sender
 
 # Launch shell when container starts

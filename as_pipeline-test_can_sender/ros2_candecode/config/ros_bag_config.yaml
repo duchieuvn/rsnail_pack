@@ -1,0 +1,105 @@
+topic_groups:
+  # Group_name:
+    # - /topic_name
+
+  sensor:
+    - /sensor_can
+  motor:
+    - /motor_can
+
+  decode:
+    - /imu
+    - /steering
+    - /vsu_distance
+    - /vsu_velocity
+    - /vsu_absolute_velocity
+    - /vsu_angle
+    - /vsu
+    - /fl_tire
+    - /fr_tire
+    - /rl_tire
+    - /rr_tire
+
+  velodyne:
+    - /velodyne_points
+
+  camera:
+    - /zed/zed_node/left/camera_info
+    - /zed/zed_node/left/image_rect_color
+    - /zed/zed_node/left_gray/image_rect_gray
+    - /zed/zed_node/left_raw/camera_info
+    - /zed/zed_node/left_raw/image_rect_color
+    - /zed/zed_node/left_raw_gray/image_rect_gray
+    - /zed/zed_node/rgb/camera_info
+    - /zed/zed_node/rgb/image_rect_color
+    - /zed/zed_node/rgb_gray/image_rect_gray
+    - /zed/zed_node/rgb_raw/camera_info
+    - /zed/zed_node/rgb_raw/image_rect_color
+    - /zed/zed_node/rgb_raw_gray/image_rect_gray
+    - /zed/zed_node/right/camera_info
+    - /zed/zed_node/right/image_rect_color
+    - /zed/zed_node/right_gray/image_rect_gray
+    - /zed/zed_node/right_raw/camera_info
+    - /zed/zed_node/right_raw/image_rect_color
+    - /zed/zed_node/right_raw_gray/image_rect_gray
+    - /zed/zed_node/stereo/image_rect_color
+    - /zed/zed_node/stereo_raw/image_raw_color
+    - /zed/zed_node/depth/camera_info
+    - /zed/zed_node/depth/depth_registered
+    - /zed/zed_node/depth/depth_info
+    - /zed/zed_node/point_cloud/cloud_registered
+    - /zed/zed_node/confidence/confidence_map
+    - /zed/zed_node/disparity/disparity_image
+    - /zed/zed_node/left_cam_imu_transform
+    - /zed/zed_node/imu/data
+    - /zed/zed_node/imu/data_raw
+    - /zed/zed_node/imu/mag
+    - /zed/zed_node/atm_press
+    - /zed/zed_node/temperature/imu
+    - /zed/zed_node/temperature/left
+    - /zed/zed_node/temperature/right
+    - /zed/zed_node/pose
+    - /zed/zed_node/pose/status
+    - /zed/zed_node/pose_with_covariance
+    - /zed/zed_node/odom
+    - /zed/zed_node/odom/status
+    - /zed/zed_node/path_map
+    - /zed/zed_node/path_odom
+    - /zed/zed_node/pose/filtered
+    - /zed/zed_node/pose/filtered/status
+    - /zed/zed_node/geo_pose
+    - /zed/zed_node/geo_pose/status
+    - /zed/zed_node/mapping/fused_cloud
+    - /zed/zed_node/obj_det/objects
+    - /zed/zed_node/body_trk/skeletons
+    - /zed/zed_node/plane
+    - /zed/zed_node/plane_marker
+    - /camera/pose
+    - /camera/imu
+    - /camera/pointcloud
+
+  livox:
+    - /livox/imu
+    - /livox/lidar
+
+  transformer:
+    - /tf
+    - /tf_static
+
+  ekf:
+    - /odometry/filtered
+
+  perception:
+    - /landmarks
+
+  slam:
+    - /estimation/slam/map
+    - /estimation/slam/pose
+    - /estimation/visualization/map
+
+  path-planning:
+    - /path
+
+  controller:
+    - /send_to_sensor
+

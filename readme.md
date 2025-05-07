@@ -15,7 +15,7 @@
 - Build a Docker image based on `Dockerfile`  
 
 ``` 
-docker build -t rsnail_pack-all . 
+docker build -t rsnail_pack-main . 
 ```
   
 - Run the container  
@@ -25,7 +25,7 @@ docker run -it \
   --rm \
   --env DISPLAY=$DISPLAY \
   --volume /tmp/.X11-unix:/tmp/.X11-unix \
-  rsnail_pack-all \
+  rsnail_pack-main \
   bash
 ```
 

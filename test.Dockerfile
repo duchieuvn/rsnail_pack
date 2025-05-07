@@ -36,17 +36,19 @@ SHELL ["/bin/bash", "-c"]
 
 COPY ./as_pipeline-test_can_sender /root/as_pipeline-test_can_sender
 # gtsam 4.2.0-ros
-COPY ./gtsam /root/gtsam
+# COPY ./gtsam /root/gtsam
 
 WORKDIR /root
 RUN git clone --branch 5.15 https://github.com/qt/qtserialbus.git
 RUN git clone https://github.com/1r0b1n0/libros2qt.git
+RUN git clone --branch 4.2.0-ros https://github.com/borglab/gtsam.git
 
 WORKDIR /root/qtserialbus
 RUN mkdir -p build && cd build && qmake .. && make && make install
 
 WORKDIR /root/libros2qt
 RUN mkdir -p build && cd build && \
+    source /opt/ros/humble/setup.bash && \
     cmake .. && \
     make && \
     make install

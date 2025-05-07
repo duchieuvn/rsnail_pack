@@ -39,5 +39,6 @@ docker build -f test.Dockerfile -t testbuild .
 docker run -it \
   --rm \
   --env DISPLAY=$DISPLAY \
-  testbuild \
+  --volume /tmp/.X11-unix:/tmp/.X11-unix \
+  rsnail_pack-all \
   bash
